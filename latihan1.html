@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Workshop &amp; Workshop Teknologi 2026</title>
+</head>
+<body>
+
+    <header>
+        <figure>
+            <img src="logo uhw.png" alt="Logo UHW Perbanas" width="120">
+        </figure>
+        <h1>Workshop Teknologi Informasi 2026</h1>
+        <p>Akselerasi Inovasi AI dan Rekayasa Perangkat Lunak Masa Depan</p>
+    </header>
+
+    <hr>
+
+    <nav>
+        <ul>
+            <li><a href="#tentang">Tentang Acara</a></li>
+            <li><a href="#rundown">Rundown Kegiatan</a></li>
+            <li><a href="#form-pendaftaran">Formulir Pendaftaran</a></li>
+            <li><a href="#info-penting">Informasi Penting</a></li>
+            <li><a href="https://www.perbanas.ac.id" target="_blank" rel="noopener noreferrer">UHW Perbanas</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <main>
+        
+        <section id="tentang">
+            <h2>Gambaran Umum Kegiatan</h2>
+            <article>
+                <h3>Membangun Talenta Digital Berdaya Saing</h3>
+                <p>
+                    Kegiatan ini dirancang untuk membekali mahasiswa dengan pemahaman mendalam terkait pemanfaatan kecerdasan buatan (AI) dalam pengembangan web modern serta arsitektur kode semantik HTML5.
+                </p>
+                
+                <figure>
+                    <img src="workshop.jpg" alt="Suasana Workshop Teknologi di Auditorium Kampus" width="550">
+                    <figcaption><em>Suasana Workshop di Auditorium Kampus.</em></figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="rundown">
+            <h2>Jadwal &amp; Susunan Acara</h2>
+            
+            <table border="1">
+                <caption>Susunan Agenda Workshop Teknologi 2026</caption>
+                <thead>
+                    <tr>
+                        <th>Waktu (WIB)</th>
+                        <th>Agenda / Sesi</th>
+                        <th>Narasumber / Fasilitator</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>08.00 - 08.45</td>
+                        <td>Registrasi Peserta &amp; Welcoming Speech</td>
+                        <td>Panitia &amp; BEM UHW</td>
+                    </tr>
+                    <tr>
+                        <td>08.45 - 10.30</td>
+                        <td>Keynote 1: Integrasi AI pada Web Modern</td>
+                        <td>Pakar AI &amp; Software Engineer</td>
+                    </tr>
+                    <tr>
+                        <td>10.30 - 12.00</td>
+                        <td>Keynote 2: Implementasi HTML5 Semantik Advanced</td>
+                        <td>Heri Supriyanto, M.Kom.</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><strong>Total Durasi Acara</strong></td>
+                        <td><strong>4 Jam</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="form-pendaftaran">
+            <h2>Formulir Pendaftaran Peserta</h2>
+
+            <form action="proses.php" method="post">
+                <fieldset>
+                    <legend><strong>Data Identitas Peserta</strong></legend>
+                    <br>
+                    <div>
+                        <label for="nama">Nama Lengkap:</label><br>
+                        <input type="text" id="nama" name="nama" placeholder="Contoh: Nama Lengkap" required>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="nim">NIM (Nomor Induk Mahasiswa):</label><br>
+                        <input type="number" id="nim" name="nim" placeholder="Contoh: 202601001" required>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="email">Alamat Email Kampus/Pribadi:</label><br>
+                        <input type="email" id="email" name="email" placeholder="email@contoh.ac.id" required>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="telepon">Nomor WhatsApp / Telepon:</label><br>
+                        <input type="tel" id="telepon" name="telepon" placeholder="081234567890" required>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="prodi">Program Studi:</label><br>
+                        <select id="prodi" name="prodi" required>
+                            <option value="">-- Pilih Program Studi --</option>
+                            <option value="si">Sistem Informasi</option>
+                            <option value="ti">Teknik Informatika</option>
+                            <option value="dkv">Desain Komunikasi Visual</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label>Jenis Kelamin:</label><br>
+                        <input type="radio" id="laki-laki" name="jenis_kelamin" value="L" required>
+                        <label for="laki-laki">Laki-laki</label>
+                        &nbsp;&nbsp;
+                        <input type="radio" id="perempuan" name="jenis_kelamin" value="P">
+                        <label for="perempuan">Perempuan</label>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="tgl_lahir">Tanggal Lahir:</label><br>
+                        <input type="date" id="tgl_lahir" name="tgl_lahir" required>
+                    </div>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend><strong>Detail Keikutsertaan</strong></legend>
+                    <br>
+                    <div>
+                        <label for="pilihan_sesi">Pilihan Sesi:</label><br>
+                        <select id="pilihan_sesi" name="pilihan_sesi" required>
+                            <option value="">-- Pilih Sesi --</option>
+                            <option value="luring">Hadir Langsung (Auditorium)</option>
+                            <option value="daring">Hadir Online (Zoom Meeting)</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="alasan">Alasan / Motivasi Mengikuti Kegiatan:</label><br>
+                        <textarea id="alasan" name="alasan" rows="4" cols="50" placeholder="Tuliskan motivasi singkat Anda..." required></textarea>
+                    </div>
+                </fieldset>
+
+                <br>
+
+                <div>
+                    <input type="checkbox" id="setuju" name="setuju" value="ya" required>
+                    <label for="setuju">Saya menyatakan bahwa data yang diisi adalah benar dan bersedia mengikuti seluruh tata tertib kegiatan.</label>
+                </div>
+                <br>
+
+                <button type="submit">Kirim Formulir Pendaftaran</button>
+                <button type="reset">Batal / Reset</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <aside id="info-penting">
+            <h3>Catatan &amp; Pengumuman Penting</h3>
+            <ul>
+                <li>Peserta diharapkan melalukan check-in kehadiran 20 menit sebelum acara dimulai.</li>
+                <li>E-Sertifikat hanya diberikan kepada peserta yang mengisi presensi awal dan akhir acara.</li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Panitia Pelaksana Workshop - Program Studi Sistem Informasi</p>
+    </footer>
+
+</body>
+</html>
